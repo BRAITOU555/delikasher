@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurants casher - Delikasher</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b1b3f;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .restaurant-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .restaurant-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .restaurant-card:hover {
+      transform: scale(1.02);
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .restaurant-content {
+      padding: 1rem;
+    }
+
+    .restaurant-content h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .restaurant-content p {
+      margin: 0 0 1rem;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .restaurant-content a {
+      background-color: #0b1b3f;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #0b1b3f;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Delikasher</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="restaurants.html">Restaurants</a>
+      <a href="#">Connexion</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Restaurants casher disponibles</h2>
+    <div class="restaurant-list">
+
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Restaurant Casher 1">
+        <div class="restaurant-content">
+          <h3>Chez Mendy</h3>
+          <p>Spécialités orientales - Paris 17</p>
+          <a href="menu.html?id=chez-mendy">Voir le menu</a>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?auto=format&fit=crop&w=800&q=80" alt="Restaurant Casher 2">
+        <div class="restaurant-content">
+          <h3>Grill & Go</h3>
+          <p>Grillades casher - Boulogne-Billancourt</p>
+          <a href="menu.html?id=grill-go">Voir le menu</a>
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://images.unsplash.com/photo-1600891964833-cac3d1a244ad?auto=format&fit=crop&w=800&q=80" alt="Restaurant Casher 3">
+        <div class="restaurant-content">
+          <h3>DeliFrais</h3>
+          <p>Plats préparés - Levallois</p>
+          <a href="menu.html?id=delifrais">Voir le menu</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Delikasher. Tous droits réservés.</p>
+    <p>Contact : contact@delikasher.fr</p>
+  </footer>
+
+</body>
+</html>
